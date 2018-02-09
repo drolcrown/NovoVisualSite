@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta charset="utf-8">
+    <title>Portal CEDESBR160</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+
+    <!-- Bootstrap CSS File -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- BootsTrap Datepicker-->
+    <link href="lib/bootstrap/css/bootstrap-datepicker.css" rel="stylesheet"/>
+
+    <!-- Libraries CSS Files -->
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Main Stylesheet File -->
+    <link href="css/style.css" rel="stylesheet">
+
+<body onload="acionaEventos()">
+    <div class="topo">
+
+    </div>
+    <form id="evento" class="eventosForm mt-3 ml-1">
+        <div class="form-row">
+            <div class="col-md-0">
+                <img src="img/eventos/calendar.svg" height="32">
+            </div>
+            <div class="col-md-4 mb-3">
+                <input type="text" class="form-control"  maxlength="10" id="dataInicio" onmousedown="mostraCalendario()" required>
+            </div>
+            <div class="col-md-4 mb-3">
+                <input type="text" class="form-control" maxlength="10" id="dataFim" required onmousedown="mostraCalendario()">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="col-md-0">
+                <img src="img/eventos/location-point.svg" height="32">
+            </div>
+            <select class="custom-select col-md-4 mb-3 form-control" id="estado">
+                <option value="0" selected>Estado</option>
+                <option value="1">AC</option>
+                <option value="2">AL</option>
+                <option value="4">AM</option>
+                <option value="3">AP</option>
+                <option value="5">BA</option>
+                <option value="6">CE</option>
+                <option value="7">DF</option>
+                <option value="8">ES</option>
+                <option value="9">GO</option>
+                <option value="10">MA</option>
+                <option value="13">MG</option>
+                <option value="12">MS</option>
+                <option value="11">MT</option>
+                <option value="14">PA</option>
+                <option value="15">PB</option>
+                <option value="16">PE</option>
+                <option value="17">PI</option>
+                <option value="18">PR</option>
+                <option value="19">RJ</option>
+                <option value="20">RN</option>
+                <option value="21">RO</option>
+                <option value="22">RR</option>
+                <option value="23">RS</option>
+                <option value="24">SC</option>
+                <option value="25">SE</option>
+                <option value="26">SP</option>
+                <option value="27">TO</option>
+            </select>
+            <div class="col-md-4 mb-3">
+                <select type="text" class="form-control" id="municipio" required>
+                    <option selected value="0">Todos os Municipios</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-row ml-4">
+            <div class="col-md-0">
+                <button class="btn btn-primary" type="submit" value="Submit" onclick="pesquisarEvento()">Pesquisar Evento</button>
+            </div>
+            <div class="col-md-0">
+                <button class="btn btn-primary" type="reset" value="Reset">Limpar</button>
+            </div>
+            <div class="col-md-0">
+                <button class="btn btn-primary" type="button" value="Button" onclick="adicionarEvento()">Adicionar Evento</button>
+            </div>
+        </div>
+    </form>
+    <div class="row justify-content-center" id="eventos"></div>
+</body>
+
+ <!--JavaScript Libraries-->
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="lib/bootstrap/js/bootstrap-datepicker.min.js"></script>
+<script src="lib/bootstrap/js/bootstrap-datepicker.pt-BR.min.js" charset="UTF-8"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/superfish/hoverIntent.js"></script>
+<script src="lib/superfish/superfish.min.js"></script>
+<script src="lib/wow/wow.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/counterup/counterup.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="lib/isotope/isotope.pkgd.min.js"></script>
+<script src="lib/lightbox/js/lightbox.min.js"></script>
+<script src="lib/touchSwipe/jquery.touchSwipe.min.js"></script>
+
+<!-- Contact Form JavaScript File -->
+<script src="contactform/contactform.js"></script>
+
+
+<!-- Template Main Javascript File -->
+<script src="js/main.js"></script>
+<script src="js/funcoes.js"></script>
+
+</html>

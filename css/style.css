@@ -746,6 +746,39 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 0;
 }
 
+/*Feature Eventos*/
+.topo{
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(rgba(0, 142, 99, 0.1), rgba(0, 0, 0, 0.1)), url(../img/call-to-action-bg.jpg) fixed center center;
+
+}
+
+#eventos{
+  width: 100%;
+  margin-top: 5%;
+}
+
+.cartao {
+  background: rgba(36, 102, 175, 0.9);
+  border: 1px solid black;
+  margin-left: 2%;
+  margin-top: 1%;
+  width: 250px;
+  height: 120px;
+}
+
+.dia {
+  background: white;
+  text-align: justify;
+}
+
+.textoEvento {
+  background: orange;
+}
+
+/**/
+
 /* Call To Action Section
 --------------------------------*/
 #call-to-action {
